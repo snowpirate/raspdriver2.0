@@ -33,6 +33,7 @@ Project Setup
 4. !!!!
    Get the GPS setup (See link to blog)
     a. I needed to also modify /etc/default/gpsd with the following lines:
+    
         DEVICES="/dev/ttyUSB0"
         GPSD_SOCKET="/var/run/gpsd.sock"
         
@@ -60,18 +61,23 @@ Project Operation
 1. With all the hardware plugged in as listed above, power on the Pi.
 2. The [ /home/pi/beginkismet.sh ] script launches Kismet in the background.
 3. While Kismet does it's thing, the /home/pi/kismet/ directory starts populating with datas.
-3.a. If you really want, you can check things while this is going by launching the Kismet Client from the command line.
-3.b. Or run gpsd or gpsmon to see if that's working (but I prefer to just check in the Kismet GUI
+
+
+   3.a. If you really want, you can check things while this is going by launching the Kismet Client from the command line.
+   3.b. Or run gpsd or gpsmon to see if that's working (but I prefer to just check in the Kismet GUI
      from Windows > GPS Details.
+
+
 4. So everything will auto run on it's own.
 
 5. When done !!! IMPORTANT !!! and before you power off the vehicle:
-5.a  Run one of the finishkismet scripts depending if you want the pi to power off when done.  This
+
+   5.a  Run one of the finishkismet scripts depending if you want the pi to power off when done.  This
      will wrap up the files and move the pcaps (zipped up) into the ~/zips directory and move the other files
      (also zipped) to the ~/extras directory.
      
-5.a.1  finishkismet.sh  {shuts the pi down when done}
-5.a.2  finishkismetDONTSHUTDOWN.sh  {doesn't shut the pi down when done}
+      5.a.1  finishkismet.sh  {shuts the pi down when done}
+      5.a.2  finishkismetDONTSHUTDOWN.sh  {doesn't shut the pi down when done}
 
 
 
