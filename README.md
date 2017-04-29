@@ -33,7 +33,7 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
 
 4. !!!!
    Get the GPS setup (See link to blog)
-    1. I needed to also modify /etc/default/gpsd with the following lines:
+    1. I needed to also modify ```/etc/default/gpsd``` with the following lines:
     ```
         DEVICES="/dev/ttyUSB0"
         GPSD_SOCKET="/var/run/gpsd.sock"
@@ -50,13 +50,13 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
 6. Install the UPS
 
 7. !!!!
-   Clone this repository to the ~/ directory of the Pi
+   Clone this repository to the ```~/``` directory of the Pi
 8. !!!!
     Add the line: 
     ```
     home/pi/beginkismet.sh
     ```
-    to the Pi's /etc/rc.local to ensure it runs at startup.
+    to the Pi's ```/etc/rc.local``` to ensure it runs at startup.
 
 9. Setup UPS script to execute powerdown.sh whenever power is lost. **_Work in progress_**.
 
@@ -65,8 +65,8 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
 # Project Operation
 
 1. With all the hardware plugged in as listed above, power on the Pi.
-2. The [ /home/pi/beginkismet.sh ] script launches Kismet in the background.
-3. While Kismet does it's thing, the /home/pi/kismet/ directory starts populating with datas.
+2. The ```/home/pi/beginkismet.sh``` script launches Kismet in the background.
+3. While Kismet does it's thing, the ```/home/pi/kismet/``` directory starts populating with datas.
 
 
    1. If you really want, you can check things while this is going by launching the Kismet Client from the command line.
@@ -82,8 +82,8 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
      will wrap up the files and move the pcaps (zipped up) into the 
      ``` ~/zips``` directory and move the other files (also zipped) to the ```~/extras``` directory.
      
-      * finishkismet.sh  {shuts the pi down when done}
-      * finishkismetDONTSHUTDOWN.sh  {doesn't shut the pi down when done}
+      * ```finishkismet.sh```  {shuts the pi down when done}
+      * ```finishkismetDONTSHUTDOWN.sh```  {doesn't shut the pi down when done}
 
 
 
@@ -98,8 +98,8 @@ https://www.raspberrypi.org/documentation/installation/installing-images/README.
 
 ## Apt Packages Installed
 
-vim (fav editor)
-kismet (kinda easy button for wardriving)
+* vim (fav editor)
+* kismet (kinda easy button for wardriving)
 
 
 
