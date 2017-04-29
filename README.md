@@ -113,41 +113,31 @@ http://www.amazon.com/OFFICIAL-RASPBERRY-FOUNDATION-TOUCHSCREEN-DISPLAY/dp/B0153
 http://blog.retep.org/2012/06/18/getting-gps-to-work-on-a-raspberry-pi/
 
 ### PiUPS #1
-Pi UPS - Raspberry Pi Backup Power Supply by CW2.
-
-http://www.amazon.com/Pi-UPS-Raspberry-Backup-Supply/dp/B00JNFP71A
-http://piups.net/support/
-
+[Pi UPS - Raspberry Pi Backup Power Supply by CW2.](http://www.amazon.com/Pi-UPS-Raspberry-Backup-Supply/dp/B00JNFP71A)
+[PiUPS Page](http://piups.net/support/)
 * This one didn't work for me.  It wasn't recognized (perhaps due to the touchscreen) so it never shut the Pi down.
 * It did however keep it running when power was lost, so that was nice until the second UPS arrives.
 
 ### DC to USB (For Pi Power)
-Super Power Supply® 5.5x2.1mm (5.5mm 2.1xmm) Female to Micro USB Male Plug Charge Cable Plug
-http://www.amazon.com/Super-Power-Supply®-5-5x2-1mm-2-1xmm/dp/B00S6N5I64
+[Super Power Supply® 5.5x2.1mm (5.5mm 2.1xmm) Female to Micro USB Male Plug Charge Cable Plug](http://www.amazon.com/Super-Power-Supply®-5-5x2-1mm-2-1xmm/dp/B00S6N5I64)
 
 
 ### DC Step Down Transformer
-SINOLLC DC 12V 24V to 5V 3A Converter Step Down Regulator 5V Regulated Power Supplies Transformer Converter
-http://www.amazon.com/SINOLLC-Converter-Regulator-Regulated-Transformer/dp/B00J3MHTYG
+[SINOLLC DC 12V 24V to 5V 3A Converter Step Down Regulator 5V Regulated Power Supplies Transformer Converter](http://www.amazon.com/SINOLLC-Converter-Regulator-Regulated-Transformer/dp/B00J3MHTYG)
 
 ### Automotive Plug with Two Tails
-EDO Tech® 11' Long Twin Plug Car Charger Cable DC Adapter for Sylvania SDVD8727 SDVD8730 SDVD8732 SDVD8716-COM Dual Screen DVD Player
-http://www.amazon.com/Sylvania-SDVD8727-SDVD8730-SDVD8732-SDVD8716-COM/dp/B007QP7582
+[EDO Tech® 11' Long Twin Plug Car Charger Cable DC Adapter for Sylvania SDVD8727 SDVD8730 SDVD8732 SDVD8716-COM Dual Screen DVD Player](http://www.amazon.com/Sylvania-SDVD8727-SDVD8730-SDVD8732-SDVD8716-COM/dp/B007QP7582)
 
 ### 10 Pack of DC plugs
-MassMall High Quality 10pack 10 inch(30cm) 2.1 x 5.5mm DC Power Pigtail MALE
-http://www.amazon.com/MassMall-Quality-10pack-5-5mm-Pigtail/dp/B00XTY8WUY
+[MassMall High Quality 10pack 10 inch(30cm) 2.1 x 5.5mm DC Power Pigtail MALE](http://www.amazon.com/MassMall-Quality-10pack-5-5mm-Pigtail/dp/B00XTY8WUY)
 
 ### Wireless Keyboard
-Rii Mini Wireless 2.4GHz Keyboard with Mouse Touchpad Remote Control, Black (mini X1) for Raspberry pi/HTPC/XBMC/Google and Android TV KP-810-10LL
-http://www.amazon.com/Rii-mini-X1-Raspberry-KP-810-10LL/dp/B00I5SW8MC
+[Rii Mini Wireless 2.4GHz Keyboard with Mouse Touchpad Remote Control, Black (mini X1) for Raspberry pi/HTPC/XBMC/Google and Android TV KP-810-10LL](http://www.amazon.com/Rii-mini-X1-Raspberry-KP-810-10LL/dp/B00I5SW8MC)
 
 ### Alfa WiFi Cards
-Alfa Brand AWUS036EW
-http://www.alfa.net.my/webshaper/store/viewProd.asp?pkProductItem=27
+[Alfa Brand AWUS036EW](http://www.alfa.net.my/webshaper/store/viewProd.asp?pkProductItem=27)
 * I believe these have been replaced with a 1000mw version:
 * http://www.amazon.com/802-11g-Wireless-Long-Rang-Network-Adapter/dp/B0035GWTKK
 
 ### USB Hub
-j5create USB 3.0 4-Port HUB JUH340
-http://www.amazon.com/USB-3-0-4-Port-HUB-JUH340/dp/B00HLOLQ6K
+[j5create USB 3.0 4-Port HUB JUH340](http://www.amazon.com/USB-3-0-4-Port-HUB-JUH340/dp/B00HLOLQ6K)
