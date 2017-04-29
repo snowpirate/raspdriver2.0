@@ -111,6 +111,7 @@ http://www.amazon.com/OFFICIAL-RASPBERRY-FOUNDATION-TOUCHSCREEN-DISPLAY/dp/B0153
 
 ### GPS
 http://blog.retep.org/2012/06/18/getting-gps-to-work-on-a-raspberry-pi/
+
 My personal favorite GPS:
 [GlobalSat ND-100S USB GPS Dongle](https://www.amazon.com/GlobalSat-ND-100S-USB-GPS-Dongle/dp/B003WNHGAO/ref=sr_1_fkmr0_1?ie=UTF8&qid=1379103714&sr=8-1-fkmr0)
 
