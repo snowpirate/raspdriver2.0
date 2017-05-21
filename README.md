@@ -51,6 +51,12 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
 
 7. !!!!
    Clone this repository to the ```~/``` directory of the Pi
+   
+   Move the kismet.conf file to 
+   ```
+   /etc/kismet/kismet.conf
+   ```
+   
 8. !!!!
     Add the line: 
     ```
