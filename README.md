@@ -76,9 +76,11 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
 
 
 ```$ sudo lsusb```
+
 Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
 
 ```$ cat /var/log/syslog | grep ttyUSB0```
+
 raspdriver2 kernel: [   11.644476] usb 1-1.4: pl2303 converter now attached to ttyUSB0
 
 ```
