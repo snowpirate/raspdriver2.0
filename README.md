@@ -30,49 +30,46 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
 1. Make bootable OS SD card with latest Raspbian
 2. Install the touchscreen (this is where you can get creative.  I recommend making a "case" for everything at this point)
 3. Boot up and install required software (give it the internet)
-
    i.  Initial setup
-         login (pi/raspbery)
-         sudo raspi-config
-              Change Password 
-              Change Hostname
-              Boot Options - Console Autologin
-              Localisation Options - Time Zone
-              Interfacing Options - SSH enabled
-              Advanced - Expand Filesystem
-       <reboot>
-             (ahh, now we can SSH in :)
-       Fix the keyboard layout:
-       sudo nano /etc/default/keyboard
-       
-       and do changes to look like this:
-```
-XKBMODEL="pc104"
-XKBLAYOUT="us"
-```
-save changes, then: 
-```
-sudo setupcon
-```
-
+   * login (pi/raspbery)
+   * sudo raspi-config
+   * Change Password 
+   * Change Hostname
+   * Boot Options - Console Autologin
+   * Localisation Options - Time Zone
+   * Interfacing Options - SSH enabled
+   * Advanced - Expand Filesystem
+   * - - reboot - -
+   * (ahh, now we can SSH in :)
+   * Fix the keyboard layout:
+   * sudo nano /etc/default/keyboard
+   * and do changes to look like this:
+      ```
+      XKBMODEL="pc104"
+      XKBLAYOUT="us"
+      ```
+   * save changes, then: 
+      ```
+      sudo setupcon
+      ```
 
    ii. Install Some Goodies
    
-      sudo apt-get update
-      sudo apt-get install vim
-            (and then configure the ~/.vimrc file with stuff like syntax on, set number, colo desert)
-       edit ~/.bashrc file to fix things like alias' and stuff
-  <logout / login>
-       sudo apt-get install kismet
-       sudo apt-get install tshark
-       sudo apt-get install git
-       audo apt-get install zip
+   * sudo apt-get update
+   * sudo apt-get install vim
+   * (and then configure the ~/.vimrc file with stuff like syntax on, set number, colo desert)
+   * edit ~/.bashrc file to fix things like alias' and stuff
+   * - - logout / login - -
+   * sudo apt-get install kismet
+   * sudo apt-get install tshark
+   * sudo apt-get install git
+   * sudo apt-get install zip
 
-<setup the environment>
-from ~/
-    mkdir kismet
-    mkdir zips
-    mkdir extras
+   iii. setup the environment
+   * from ~/
+   * mkdir kismet
+   * mkdir zips
+   * mkdir extras
     
 
 4. Get the GPS setup (See link to blog below)
