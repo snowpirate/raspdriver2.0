@@ -58,46 +58,47 @@ sudo setupcon
 
    ii. Install Some Goodies
    
-       sudo apt-get update
-       sudo apt-get install vim
+      sudo apt-get update
+      sudo apt-get install vim
             (and then configure the ~/.vimrc file with stuff like syntax on, set number, colo desert)
        edit ~/.bashrc file to fix things like alias' and stuff
-       <logout / login>
+  <logout / login>
        sudo apt-get install kismet
        sudo apt-get install tshark
+       sudo apt-get install git
+
+<setup the environment>
+from ~/
+    mkdir kismet
+    
+
+4. Get the GPS setup (See link to blog below)
 
 
-
-4. !!!!
-   Get the GPS setup (See link to blog)
-
-
-$ sudo lsusb
+```$ sudo lsusb```
 Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
 
-$ cat /var/log/syslog | grep ttyUSB0
+```$ cat /var/log/syslog | grep ttyUSB0```
 raspdriver2 kernel: [   11.644476] usb 1-1.4: pl2303 converter now attached to ttyUSB0
 
-$ sudo apt-get install gpsd gpsd-clients python-gps
-$ sudo gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock
+```$ sudo apt-get install gpsd gpsd-clients python-gps
+$ sudo gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock```
 
-   I needed to also modify ```/etc/default/gpsd``` with the following lines: 
+
+   THEN > IMPORTANT:  modify ```/etc/default/gpsd``` with the following lines: 
     ```
         DEVICES="/dev/ttyUSB0"
         GPSD_SOCKET="/var/run/gpsd.sock"
     ```
 
+Test it out in a window (or somewhere with GPS reception)
+```$ cgps -s```
 
+( do the whole "ntp clock synch thing" from the blog if you want )
 
-$ cgps -s
-
-<<< ran into issues here >>>
 
 Reference-style: 
 ![alt text][pic2]
-
-[pic1]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0331.jpg "Logo Title Text 1"
-[pic2]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0332.jpg "Logo Title Text 2"
 
 
 
@@ -110,7 +111,7 @@ Reference-style:
     5. Give one pigtail the DC to USB adaptor for the Pi, Screen, and UPS.
     6. Give the other pigtail directly into the USB hub
 
-6. Install the UPS
+6. ~~Install the UPS~~
 
 7. !!!!
    Clone this repository to the ```~/``` directory of the Pi
@@ -213,3 +214,8 @@ My personal favorite GPS:
 
 ### USB Hub
 [j5create USB 3.0 4-Port HUB JUH340](http://www.amazon.com/USB-3-0-4-Port-HUB-JUH340/dp/B00HLOLQ6K)
+
+
+[pic1]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0331.jpg "Logo Title Text 1"
+[pic2]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0332.jpg "Logo Title Text 2"
+
