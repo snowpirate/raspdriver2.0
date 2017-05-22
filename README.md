@@ -40,20 +40,25 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
               Localisation Options - Time Zone
               Interfacing Options - SSH enabled
               Advanced - Expand Filesystem
+       
        <reboot>
              (ahh, now we can SSH in :)
+             
        Fix the keyboard layout:
        sudo nano /etc/default/keyboard
        
        and do changes to look like this:
-```
-XKBMODEL="pc104"
-XKBLAYOUT="us"
-```
-save changes, then: 
-```
-sudo setupcon
-```
+            
+            ```
+            XKBMODEL="pc104"
+            XKBLAYOUT="us"
+            ```
+            
+          save changes, then: 
+
+            ```
+            sudo setupcon
+            ```
 
 
    ii. Install Some Goodies
@@ -143,7 +148,10 @@ Reference-style:
 
 
    1. If you really want, you can check things while this is going by launching the Kismet Client from the command line.
-   2. Or run gpsd or gpsmon to see if that's working 
+   2. Or check the GPS status to see if that's working 
+       gpsd
+       gpsmon
+       cgps -s
        * I prefer to just check in the Kismet GUI from Windows > GPS Details.
 
 
@@ -169,10 +177,7 @@ https://www.raspberrypi.org/documentation/installation/installing-images/README.
 
 
 
-## Apt Packages Installed
 
-* vim (fav editor)
-* kismet (kinda easy button for wardriving)
 
 
 
