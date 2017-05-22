@@ -31,14 +31,77 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
 2. Install the touchscreen (this is where you can get creative.  I recommend making a "case" for everything at this point)
 3. Boot up and install required software (give it the internet)
 
+   i.  Initial setup
+         login (pi/raspbery)
+         sudo raspi-config
+              Change Password 
+              Change Hostname
+              Boot Options - Console Autologin
+              Localisation Options - Time Zone
+              Interfacing Options - SSH enabled
+              Advanced - Expand Filesystem
+       <reboot>
+             (ahh, now we can SSH in :)
+       Fix the keyboard layout:
+       sudo nano /etc/default/keyboard
+       
+       and do changes to look like this:
+```
+XKBMODEL="pc104"
+XKBLAYOUT="us"
+```
+save changes, then: 
+```
+sudo setupcon
+```
+
+
+   ii. Install Some Goodies
+   
+       sudo apt-get update
+       sudo apt-get install vim
+            (and then configure the ~/.vimrc file with stuff like syntax on, set number, colo desert)
+       edit ~/.bashrc file to fix things like alias' and stuff
+       <logout / login>
+       sudo apt-get install kismet
+       sudo apt-get install tshark
+
+
+
 4. !!!!
    Get the GPS setup (See link to blog)
-    1. I needed to also modify ```/etc/default/gpsd``` with the following lines:
+
+
+$ sudo lsusb
+Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+
+$ cat /var/log/syslog | grep ttyUSB0
+raspdriver2 kernel: [   11.644476] usb 1-1.4: pl2303 converter now attached to ttyUSB0
+
+$ sudo apt-get install gpsd gpsd-clients python-gps
+$ sudo gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock
+
+   I needed to also modify ```/etc/default/gpsd``` with the following lines: 
     ```
         DEVICES="/dev/ttyUSB0"
         GPSD_SOCKET="/var/run/gpsd.sock"
     ```
-    
+
+
+
+$ cgps -s
+
+<<< ran into issues here >>>
+
+Reference-style: 
+![alt text][pic2]
+
+[pic1]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0331.jpg "Logo Title Text 1"
+[pic2]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0332.jpg "Logo Title Text 2"
+
+
+
+
 5. Modify the Automotive DC plugs to provide power to the Pi and the USB Hub & Install in Housing.
     1. This part is particularly important, as the USB hub needs to be powered.
     2. The Pi doesn't have the power available to power the GPS and WiFi Dongles.
