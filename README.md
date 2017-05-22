@@ -81,8 +81,10 @@ Bus 001 Device 005: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
 ```$ cat /var/log/syslog | grep ttyUSB0```
 raspdriver2 kernel: [   11.644476] usb 1-1.4: pl2303 converter now attached to ttyUSB0
 
-```$ sudo apt-get install gpsd gpsd-clients python-gps
-$ sudo gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock```
+```
+$ sudo apt-get install gpsd gpsd-clients python-gps
+$ sudo gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock
+```
 
 
    THEN > IMPORTANT:  modify ```/etc/default/gpsd``` with the following lines: 
@@ -99,7 +101,8 @@ Test it out in a window (or somewhere with GPS reception)
 
 Reference-style: 
 ![alt text][pic2]
-
+[pic1]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0331.jpg "Logo Title Text 1"
+[pic2]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0332.jpg "Logo Title Text 2"
 
 
 
@@ -216,6 +219,5 @@ My personal favorite GPS:
 [j5create USB 3.0 4-Port HUB JUH340](http://www.amazon.com/USB-3-0-4-Port-HUB-JUH340/dp/B00HLOLQ6K)
 
 
-[pic1]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0331.jpg "Logo Title Text 1"
-[pic2]: https://github.com/hikenbike83/raspdriver2.0/blob/master/photos/IMG_0332.jpg "Logo Title Text 2"
+
 
