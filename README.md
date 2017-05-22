@@ -66,10 +66,13 @@ sudo setupcon
        sudo apt-get install kismet
        sudo apt-get install tshark
        sudo apt-get install git
+       audo apt-get install zip
 
 <setup the environment>
 from ~/
     mkdir kismet
+    mkdir zips
+    mkdir extras
     
 
 4. Get the GPS setup (See link to blog below)
