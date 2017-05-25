@@ -64,6 +64,8 @@ Yes, I realize some of this is not as "streamlined" as possible, but it's the co
    * sudo apt-get install tshark
    * sudo apt-get install git
    * sudo apt-get install zip
+   * sudo apt-get install screen
+   * sudo apt-get install htop
 
    iii. setup the environment
    * from ~/
